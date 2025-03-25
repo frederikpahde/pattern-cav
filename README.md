@@ -18,10 +18,10 @@ With a growing interest in understanding neural network prediction strategies, C
 - [Description](#description)
 - [Table of Contents](#table-of-contents)
 - [Installation](#installation)
-- [Model Training](#model-training)
-- [Revealing Spurious Behavior](#revealing-spurious-behavior)
-- [Model Correction](#model-correction)
-- [Model Evaluation](#model-evaluation)
+- [Model Training](#model-training-optional)
+- [Preprocessing](#preprocessing)
+- [CAV Alignment](#cav-alignment)
+- [Model Correction with ClArC](#model-correction-with-clarc)
 
 ## Installation
 
@@ -111,7 +111,7 @@ python -m experiments.evaluation.measure_tcav_gt_forced_concepts --config_file "
 ```
 
 
-### Model Correction wit ClArC
+### Model Correction with ClArC
 Lastly, model correction requires scripts to first finetune the model and then evaluate the new model in terms of its sensitivity to the data artifact. Start by generating config files using the generators located in `config_files/clarc_experiments/`.
 
 Then, the model can be finetuned as follows:
