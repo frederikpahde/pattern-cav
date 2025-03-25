@@ -1,0 +1,18 @@
+batch_size: 12
+data_paths:
+- PATH_TO_FUNNYBIRDS_FORCED_CONCEPTS
+dataset_name: funnybirds
+device: cuda
+eval_every_n_epochs: 1
+img_size: 224
+loss: cross_entropy
+lr: 0.001
+milestones: '30'
+model_name: vgg16
+model_savedir: PATH_TO_CHECKPOINTS
+num_epochs: 50
+optimizer: sgd
+pretrained: true
+store_every_n_epochs: 100
+wandb_api_key: YOUR_WANDB_KEY
+wandb_project_name: WANDB_PROJECT_NAME

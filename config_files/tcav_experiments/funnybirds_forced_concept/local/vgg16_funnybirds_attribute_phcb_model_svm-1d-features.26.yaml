@@ -1,0 +1,26 @@
+batch_size: 12
+cav_dim: 1
+cav_type: svm
+ckpt_path: PATH_TO_CHECKPOINT
+data_paths:
+- PATH_TO_FUNNYBIRDS_FORCED_CONCEPTS
+data_paths_attribute:
+- PATH_TO_FUNNYBIRDS_FORCED_CONCEPTS
+dataset_name: funnybirds_forced_concept
+dataset_name_attribute: funnybirds_attribute
+device: cuda
+dir_precomputed_data: PATH_TO_PRECOMPUTED_DATA
+eval_every_n_epochs: 5
+img_size: 224
+layer_name: features.26
+loss: cross_entropy
+lr: 0.005
+max_num_concepts: null
+model_name: vgg16
+model_savedir: PATH_TO_CHECKPOINTS
+num_epochs: 20
+optimizer: sgd
+phcb_model_name: phcb_model
+store_every_n_epochs: 20
+wandb_api_key: YOUR_WANDB_KEY
+wandb_project_name: local_WANDB_PROJECT_NAME

@@ -1,0 +1,25 @@
+artifact: artificial
+artifact_type: ch_time
+attacked_classes:
+- MEL
+batch_size: 12
+data_paths:
+- PATH_TO_ISIC2019
+dataset_name: isic_attacked
+device: cuda
+eval_every_n_epochs: 5
+img_size: 224
+loss: cross_entropy
+lr: 0.005
+milestones: 80,120
+model_name: vgg16
+model_savedir: PATH_TO_CHECKPOINTS
+num_epochs: 150
+optimizer: sgd
+p_artifact: 0.0
+p_backdoor: 0.0
+pretrained: true
+store_every_n_epochs: 100
+time_format: datetime
+wandb_api_key: YOUR_WANDB_KEY
+wandb_project_name: WANDB_PROJECT_NAME

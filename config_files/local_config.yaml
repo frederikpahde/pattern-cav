@@ -1,0 +1,9 @@
+isic2019_dir: PATH_TO_ISIC2019
+bone_dir: PATH_TO_BONE_AGE
+funnybirds_forced_concept_dir: PATH_TO_FUNNYBIRDS_FORCED_CONCEPTS
+funnybirds_dir: PATH_TO_FUNNYBIRDS_FORCED
+checkpoint_dir: PATH_TO_CHECKPOINTS
+checkpoint_dir_corrected: PATH_TO_CHECKPOINTS_CORRECTED
+dir_precomputed_data: PATH_TO_PRECOMPUTED_DATA
+local_batch_size: 12
+wandb_key: YOUR_WANDB_KEY
