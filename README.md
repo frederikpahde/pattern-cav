@@ -1,8 +1,17 @@
 <div align="center">
 <h1>Navigating Neural Space: Revisiting Concept Activation Vectors to Overcome Directional Divergence</h1>
 
-[![Python](https://img.shields.io/badge/python-3.8-blue)](https://www.python.org/) &nbsp;&nbsp; [![PyTorch](https://img.shields.io/badge/PyTorch-1.13-brightgreen)](https://pytorch.org/)
+[![Python](https://img.shields.io/badge/python-3.8-blue)](https://www.python.org/) &nbsp;&nbsp; 
+[![PyTorch](https://img.shields.io/badge/PyTorch-1.13-brightgreen)](https://pytorch.org/)  &nbsp;&nbsp; 
+[![arXiv](https://img.shields.io/badge/arXiv-2202.03482-b31b1b.svg)](https://arxiv.org/abs/2202.03482)
 </div>
+
+<div align="center">
+    <img src="static/International_Conference_on_Learning_Representations.png" style="max-width: 400px; width: 100%;" />
+    <h2>:rocket: To appear at ICLR2025 :rocket:</h2>
+</div>
+
+
 ## Description
 
 With a growing interest in understanding neural network prediction strategies, Concept Activation Vectors (CAVs) have emerged as a popular tool for modeling human-understandable concepts in the latent space. Commonly, CAVs are computed by leveraging linear classifiers optimizing the separability of latent representations of samples with and without a given concept. However, in this paper we show that such a separability-oriented computation leads to solutions, which may diverge from the actual goal of precisely modeling the concept direction. This discrepancy can be attributed to the significant influence of distractor directions, i.e., signals unrelated to the concept, which are picked up by filters (i.e., weights) of linear models to optimize class-separability. To address this, we introduce pattern-based CAVs, solely focussing on concept signals, thereby providing more accurate concept directions. We evaluate various CAV methods in terms of their alignment with the true concept direction and their impact on CAV applications, including concept sensitivity testing and model correction for shortcut behavior caused by data artifacts. We demonstrate the benefits of pattern-based CAVs using the Pediatric Bone Age, ISIC2019, and FunnyBirds datasets with VGG, ResNet, and EfficientNet model architectures.
@@ -11,6 +20,8 @@ With a growing interest in understanding neural network prediction strategies, C
     <img src="static/overview_figure_pattern_cav.png" style="max-width: 1000px; width: 100%;" alt="Pattern-CAV" />
     <p>Pattern-CAVs for precise concept modeling.</p>
 </div>
+
+
 
 
 ## Table of Contents
@@ -133,4 +144,16 @@ python -m experiments.evaluation.compute_artifact_relevance --config_file "confi
 
 # 3b) [for ViT] Measure relevance on artifact region in input space
 python -m experiments.evaluation.compute_artifact_relevance_shap --config_file "config_files/clarc/bone_attacked/your_config_file.yaml"
+```
+
+Please feel free to cite our work in your research:
+
+```bibtex
+@article{pahde2022navigating,
+  title={Navigating neural space: Revisiting concept activation vectors to overcome directional divergence},
+  author={Pahde, Frederik and Dreyer, Maximilian and Weber, Leander and Weckbecker, Moritz and Anders, Christopher J and Wiegand, Thomas and Samek, Wojciech and Lapuschkin, Sebastian},
+  journal={arXiv preprint arXiv:2202.03482},
+  year={2022}
+}
+}
 ```
