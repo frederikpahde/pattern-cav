@@ -149,11 +149,10 @@ python -m experiments.evaluation.compute_artifact_relevance_shap --config_file "
 Please feel free to cite our work in your research:
 
 ```bibtex
-@article{pahde2022navigating,
-  title={Navigating neural space: Revisiting concept activation vectors to overcome directional divergence},
+@inproceedings{pahde2025navigating,
+  title={Navigating Neural Space: Revisiting Concept Activation Vectors to Overcome Directional Divergence},
   author={Pahde, Frederik and Dreyer, Maximilian and Weber, Leander and Weckbecker, Moritz and Anders, Christopher J and Wiegand, Thomas and Samek, Wojciech and Lapuschkin, Sebastian},
-  journal={arXiv preprint arXiv:2202.03482},
-  year={2022}
-}
+  booktitle={{International Conference on Learning Representations}},
+  year={2025}
 }
 ```
