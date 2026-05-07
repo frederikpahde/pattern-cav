@@ -8,7 +8,7 @@
 
 <div align="center">
     <img src="static/International_Conference_on_Learning_Representations.png" style="max-width: 300px; width: 50%;" />
-    <h2>:rocket: To appear at ICLR2025 :rocket:</h2>
+    <h2>:rocket: Published at ICLR2025 :rocket:</h2>
 </div>
 
 
